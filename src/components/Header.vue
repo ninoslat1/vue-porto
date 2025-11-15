@@ -1,24 +1,17 @@
-<script setup lang="ts">
+<script setup vapor lang="ts">
 import {
   Menubar,
   MenubarContent,
   MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
   MenubarTrigger,
 } from '@/components/ui/menubar'
 </script>
 
 <template>
-    <div class="flex gap-5 w-full p-5">
-            <!-- <i class="pi pi-arrow-right-arrow-left"></i>
-            <p>ben.dev</p>
-            <p>Home</p>
-            <p>LinkedIn</p>
-            <p>Resume</p> -->
-        
-            <Menubar class="w-1/2 mx-auto flex items-center justify-between">
+    <div class="flex gap-5 w-full p-5">        
+            <Menubar class="w-1/2 mx-auto flex items-center justify-between bg-gray-200/20">
                 <MenubarMenu>
                     <MenubarTrigger class="data-[state=open]:bg-transparent hover:bg-transparent focus:bg-transparent"><i class="pi pi-arrow-up-right-and-arrow-down-left-from-center px-5"></i>ben.dev</MenubarTrigger>
                     <MenubarContent>
